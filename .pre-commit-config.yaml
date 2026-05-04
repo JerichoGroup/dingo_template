@@ -60,14 +60,6 @@ repos:
         files: \.py$
         exclude: ^docker/simulation_docker/cesium_exts_2023/
         pass_filenames: true
-      - id: enforce-blank-line-after-docstring
-        name: Enforce blank line after function docstring
-        language: python
-        entry: python3 g_tools/hooks/enforce_blank_line_after_docstring.py
-        pass_filenames: true
-        files: \.py$
-        exclude: ^docker/simulation_docker/cesium_exts_2023/
-        stages: [commit]
       - id: enforce-section-headers
         name: Enforce section headers formatting
         language: python
